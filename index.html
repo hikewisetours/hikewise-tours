@@ -51,7 +51,7 @@
   <script>
     function checkPassword() {
       var pw = document.getElementById('pw').value;
-      var correct = "hikewise2025"; // Change this password!
+      var correct = "2H0W2T5"; // Change this password!
       if (pw === correct) {
         document.getElementById('pwbox').style.display = 'none';
         document.getElementById('content').style.display = 'block';
@@ -77,8 +77,184 @@
   </div>
   <div id="content" class="hidden-content">
     <!-- Put your actual website content here! -->
-    <h1>Welcome to Hikewise Tours!</h1>
-    <p>This is a private preview.<br>Remove password protection when ready to launch.</p>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hikewise Tours</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover adventure with Hikewise Tours - your gateway to unforgettable hiking experiences.">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #b8c783;
+      --accent-color: #b8c783;
+      --text-color: #306440;
+      --highlight: #d7e534;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--accent-color);
+      color: var(--text-color);
+    }
+    header {
+      background: var(--main-color);
+      padding: 1.5rem 0;
+      color: white;
+      text-align: center;
+      letter-spacing: 2px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--highlight);
+    }
+    .hero {
+      padding: 3rem 1rem 2rem 1rem;
+      text-align: center;
+      background: linear-gradient(135deg, var(--main-color) 0%, var(--highlight) 100%);
+      color: white;
+    }
+    .hero h1 {
+      margin: 0.5em 0 0.4em 0;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .cta-btn {
+      background: white;
+      color: var(--main-color);
+      font-weight: bold;
+      padding: 0.8em 2em;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      transition: background 0.2s, color 0.2s;
+    }
+    .cta-btn:hover {
+      background: var(--highlight);
+      color: white;
+    }
+    .section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2.2rem 1.2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .feature {
+      flex: 1 1 220px;
+      min-width: 220px;
+      background: var(--accent-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.03);
+    }
+    .feature h3 {
+      margin-top: 0.6em;
+      margin-bottom: 0.4em;
+      color: var(--main-color);
+    }
+    footer {
+      background: var(--main-color);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0 0.8rem 0;
+      margin-top: 2rem;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 700px) {
+      .hero h1 { font-size: 2.1rem; }
+      .section { padding: 1.2rem 0.7rem; }
+      .features { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-size:2rem; font-weight:800; letter-spacing:3px;">Hikewise Tours</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tours">Tours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <h1>Discover Your Next Adventure</h1>
+    <p>Guided hiking experiences for all skill levels. Explore nature, make new friends, and create unforgettable memories with Hikewise Tours!</p>
+    <a href="#tours"><button class="cta-btn">Browse Tours</button></a>
+  </div>
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>Hikewise Tours is passionate about connecting people with nature. Our certified guides lead safe, fun, and educational hikes across breathtaking trails. Whether you’re a beginner or a seasoned trekker, we have the perfect tour for you.</p>
+    <div class="features">
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/2b7a78/trekking.png" alt="Guided Tours" width="48" height="48">
+        <h3>Expert Guides</h3>
+        <p>Our local guides know every trail and ensure you get the most out of your adventure.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/2b7a78/forest.png" alt="Nature" width="48" height="48">
+        <h3>Beautiful Trails</h3>
+        <p>Hike through forests, mountains, and stunning landscapes tailored to your interests.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/2b7a78/teamwork.png" alt="Group" width="48" height="48">
+        <h3>Small Groups</h3>
+        <p>Enjoy a friendly atmosphere and personalized attention on every tour.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="tours">
+    <h2>Popular Tours</h2>
+    <ul>
+      <li><strong>Sunrise Summit</strong> &ndash; Early morning hike to see the sunrise from a mountain peak.</li>
+      <li><strong>Family Nature Walk</strong> &ndash; Easy trail, perfect for kids and families.</li>
+      <li><strong>Wildlife Explorer</strong> &ndash; Spot native wildlife on scenic paths.</li>
+      <li><strong>Weekend Challenge</strong> &ndash; Longer hikes for experienced trekkers.</li>
+    </ul>
+    <p>Contact us for a full list of tours and custom packages!</p>
+  </div>
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Ready to start your next adventure? Email us at <a href="mailto:info@hikewisetours.com">info@hikewisetours.com</a> or use the form below:</p>
+    <form action="mailto:hikewisetours@gmail.com" method="POST" enctype="text/plain" style="max-width:400px;margin:auto;">
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:0.7em;margin-bottom:1em;border-radius:6px;border:1px solid #bbb;">
+      <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:0.7em;margin-bottom:1em;border-radius:6px;border:1px solid #bbb;">
+      <textarea name="message" placeholder="Message" required rows="4" style="width:100%;padding:0.7em;margin-bottom:1em;border-radius:6px;border:1px solid #bbb;"></textarea>
+      <button type="submit" class="cta-btn" style="width:100%;">Send Message</button>
+    </form>
+  </div>
+  <footer>
+    &copy; 2025 Hikewise Tours &middot; Designed with ❤️ for adventure
+  </footer>
+</body>
+</html>
   </div>
 </body>
 </html>
