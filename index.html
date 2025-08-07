@@ -2,6 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Hikewise Tours (Coming Soon)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #def2f1;
+      color: #17252a;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .hidden-content {
+      display: none;
+    }
+    .password-box {
+      margin-top: 120px;
+      background: #fff;
+      padding: 2em 2em 2.5em 2em;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    input[type="password"] {
+      padding: 0.7em;
+      border-radius: 6px;
+      border: 1px solid #bbb;
+      margin-top: 1em;
+      width: 180px;
+      font-size: 1rem;
+      margin-bottom: 1em;
+    }
+    button {
+      padding: 0.6em 1.3em;
+      background: #2b7a78;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #3aafa9;
+    }
+  </style>
+  <script>
+    function checkPassword() {
+      var pw = document.getElementById('pw').value;
+      var correct = "hikewise2025"; // Change this password!
+      if (pw === correct) {
+        document.getElementById('pwbox').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+      } else {
+        alert('Incorrect password. Please try again.');
+      }
+      return false;
+    }
+    window.onload = function() {
+      document.getElementById('content').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id="pwbox" class="password-box">
+    <h2>Site Under Construction</h2>
+    <p>This site is not ready yet.<br>Enter the password to preview:</p>
+    <form onsubmit="return checkPassword()">
+      <input type="password" id="pw" placeholder="Password" autocomplete="off" required>
+      <br>
+      <button type="submit">Enter</button>
+    </form>
+  </div>
+  <div id="content" class="hidden-content">
+    <!-- Put your actual website content here! -->
+    <h1>Welcome to Hikewise Tours!</h1>
+    <p>This is a private preview.<br>Remove password protection when ready to launch.</p>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <title>Hikewise Tours</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Discover adventure with Hikewise Tours - your gateway to unforgettable hiking experiences.">
